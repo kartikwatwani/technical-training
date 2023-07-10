@@ -29,6 +29,9 @@
                     </div>
                     <group>
                         <group>
+                          <field name="property_type_id"/>
+                        </group>
+                        <group>
                             <field name="postcode"/>
                         </group>
                         <group>
@@ -54,6 +57,12 @@
                                 <field name="garden_orientation"/>
                             </group>
                         </page>
+                        <page string="Other Info">
+                         <group>
+                         <field name="salesperson"/>
+                         <field name="buyer"/>
+                         </group>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
@@ -66,6 +75,7 @@
         <field name="arch" type="xml">
             <search>
                 <field name="name" />
+                <field name="property_type_id"/>
                 <field name="postcode" />
                 <field name="expected_price" />
                 <field name="bedrooms" />
