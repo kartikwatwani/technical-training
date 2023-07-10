@@ -9,7 +9,10 @@
                 <field name="partner_id"/>
                 <field name="validity"/>
                 <field name="date_deadline"/>
-                <field name="status"/>
+                <button name="action_accept_offer" type="object" string="Accept" icon="fa-check"/>
+                <button name="action_refuse_offer" type="object" string="Refuse" icon="fa-times"/>
+                <field name="state"/>
+
             </tree>
         </field>
     </record>
@@ -33,7 +36,7 @@
                         <field name="date_deadline"/>
                         </group>
                         <group>
-                            <field name="status"/>
+                            <field name="state"/>
                         </group>
                          
                     </group>
